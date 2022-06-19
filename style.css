@@ -1,0 +1,87 @@
+* {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+}
+body {
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       background-color: #000;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+}
+
+.main {
+       background-color: #333;
+       padding: 15px;
+       border-radius: 10px;
+       color: #fff;
+}
+.main .head {
+       position: relative;
+}
+.main .head .search {
+       width: 100%;
+       background-color: #000;
+       border: none;
+       outline: none;
+       padding: 10px;
+       border-radius: 10px;
+       color: #fff;
+       font-size: 22px;
+       position: relative;
+}
+.main .head .search:focus::placeholder {
+       transition: 0.5s;
+       opacity: 0;
+}
+.main .head #countries {
+       height: 200px;
+       position: absolute;
+       top: 0;
+       left: 50%;
+       transform: translateX(-50%);
+}
+input::-webkit-calendar-picker-indicator {
+       opacity: 0;
+}
+.main .head .search-icon {
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       right: 10px;
+       display: block;
+       z-index: 100000;
+       width: 50px;
+       background-color: inherit;
+}
+.main .country {
+       font-size: 27px;
+       font-weight: 400;
+       margin: 10px 0;
+}
+.main > p {
+       font-size: 30px;
+       font-weight: 600;
+}
+.status {
+       display: flex;
+       align-items: center;
+}
+.status img {
+       width: 70px;
+}
+.status p {
+       font-size: 25px;
+       font-weight: 400;
+}
+.main .more p {
+       font-size: 17px;
+       font-weight: 400;
+}
+
+.main .more p span {
+       font-size: 19px;
+       margin-left: 5px;
+}
